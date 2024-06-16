@@ -1,0 +1,48 @@
+﻿@model CostManager.Models.ViewModel.LoginViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login Page | Gerenciador Financeiro</title>
+    <link href="~/favicon.ico" rel="shortcut icon" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="container login-container">
+        <div class="card w-25">
+            <div class="card-body">
+                <h5 class="card-title text-center mb-2">LogIn</h5>
+                @using (Html.BeginForm("Index", "Login", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.Email, new { @class = "form-label" })
+                        @Html.EditorFor(x => x.Email, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger text-center" })
+                    </div>
+                    <div class="mb-3">
+                        @Html.LabelFor(x => x.Senha, new { @class = "form-label" })
+                        @Html.EditorFor(x => x.Senha, new { htmlAttributes = new { @class = "form-control", @type="password" } })
+                        @Html.ValidationMessageFor(x => x.Senha, "", new { @class = "text-danger text-center" })
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Entrar</button>
+                    </div>
+
+                    <a href="@Url.Action("ForgotPassword", "Login")" class="forgot-password">Esqueci a senha</a>
+                }
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

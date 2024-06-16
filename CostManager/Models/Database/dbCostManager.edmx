@@ -39,6 +39,7 @@
           <Property Name="CPF" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="DataNascimento" Type="datetime" Nullable="false" />
           <Property Name="Perfil" Type="int" Nullable="false" />
+          <Property Name="Status" Type="bit" Nullable="false" />
         </EntityType>
         <Association Name="FK_UsuarioEndereco">
           <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
@@ -132,6 +133,7 @@
           <Property Name="Perfil" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Endereco" Relationship="dbCostManagerModel.FK_UsuarioEndereco" FromRole="Usuario" ToRole="Endereco" />
           <NavigationProperty Name="Telefone" Relationship="dbCostManagerModel.FK_UsuarioTelefone" FromRole="Usuario" ToRole="Telefone" />
+          <Property Name="Status" Type="Boolean" Nullable="false" />
         </EntityType>
         <Association Name="FK_UsuarioEndereco">
           <End Type="dbCostManagerModel.Usuario" Role="Usuario" Multiplicity="1" />
@@ -191,6 +193,7 @@
           <EntitySetMapping Name="Usuario">
             <EntityTypeMapping TypeName="dbCostManagerModel.Usuario">
               <MappingFragment StoreEntitySet="Usuario">
+                <ScalarProperty Name="Status" ColumnName="Status" />
                 <ScalarProperty Name="Perfil" ColumnName="Perfil" />
                 <ScalarProperty Name="DataNascimento" ColumnName="DataNascimento" />
                 <ScalarProperty Name="CPF" ColumnName="CPF" />

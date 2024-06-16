@@ -28,6 +28,7 @@ namespace CostManager.Models.Database
         public string CPF { get; set; }
         public System.DateTime DataNascimento { get; set; }
         public int Perfil { get; set; }
+        public bool Status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Endereco> Endereco { get; set; }
