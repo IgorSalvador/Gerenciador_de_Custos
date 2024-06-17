@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Runtime.Remoting.Messaging;
 using System.Security.Claims;
 using System.Web;
 using System.Web.Mvc;
@@ -75,7 +76,7 @@ namespace CostManager.Controllers
 
             Session.Abandon();
 
-            return new RedirectResult(ConfigurationManager.AppSettings["PortalLysiUri"]);
+            return RedirectToAction("Index", "Login");
         }
     }
 }

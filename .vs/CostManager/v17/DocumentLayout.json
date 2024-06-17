@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|c:\\users\\igors\\documents\\projetos\\costmanager\\costmanager\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|c:\\users\\igors\\documents\\projetos\\costmanager\\costmanager\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|c:\\users\\igors\\documents\\projetos\\costmanager\\costmanager\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CostManager\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CostManager\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-17T00:05:23.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CostManager\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CostManager\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABYAAAAAAAAAAAAYwDQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T23:10:45.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "CostManager\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "CostManager\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAIA0wBgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T23:10:22.96Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
