@@ -1,0 +1,151 @@
+﻿@using CostManager.Models
+@model IEnumerable<CostManager.Models.Database.Usuario>
+@{
+    ViewBag.Title = "Listagem de Usuários";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="mb-3">
+    <div class="mb-4">
+        <h3>@ViewBag.Title</h3>
+    </div>
+
+    <div class="mb-3">
+        @using (Html.BeginForm("Index", "Usuario", FormMethod.Get, new { enctype = "multipart/form-data" }))
+        {
+            <div class="row mb-3">
+                <div class="col-md-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" value="@ViewBag.Nome" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="text" class="form-control" id="email" name="email" value="@ViewBag.Email" autocomplete="off">
+                </div>
+                <div class="col-md-3">
+                    <label for="perfil" class="form-label">Perfil</label>
+                    <select id="perfil" name="perfil" class="form-select">
+                        <option disabled selected>Todos</option>
+                        <option value="1" @(ViewBag.Perfil == "1" ? "selected" : "")>Administrador</option>
+                        <option value="2" @(ViewBag.Perfil == "2" ? "selected" : "")>Usuário</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="status" class="form-label">Status</label>
+                    <select id="status" name="status" class="form-select">
+                        <option disabled selected>Todos</option>
+                        <option value="1" @(ViewBag.Status == "1" ? "selected" : "")>Ativo</option>
+                        <option value="2" @(ViewBag.Status == "0" ? "selected" : "")>Inativo</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between">
+                <div>
+                    <button type="button" id="adicionarUsuario" class="btn btn-outline-success">
+                        <i class="bi bi-plus-lg"></i>
+                        Adicionar
+                    </button>
+                </div>
+                <div class="d-flex justify-content-end gap-2">
+                    <button type="button" id="cleanPage" class="btn btn-outline-danger">
+                        <i class="bi bi-eraser-fill"></i>
+                        Limpar
+                    </button>
+                    <button type="submit" class="btn btn-outline-info">
+                        <i class="bi bi-search"></i>
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        }
+    </div>
+
+    @if (Model != null)
+    {
+        <div class="mb-4">
+            <div class="table-responsive mb-3">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Nome</th>
+                            <th>E-mail</th>
+                            <th>Perfil</th>
+                            <th>Status</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model.Any())
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Id</td>
+                                    <td>@item.Nome</td>
+                                    <td>@item.Email</td>
+                                    <td>@PerfisExtensions.GetDescription(item.Perfil)</td>
+                                    <td>
+                                        @if (item.Status)
+                                        {
+                                            <i class="bi bi-check-circle-fill text-success"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="bi bi-x-circle-fill text-danger"></i>
+                                        }
+                                    </td>
+                                    <td>
+                                        <a href="@Url.Action("Edit", "Usuario", new { Id = item.Id })" title="Edit">
+                                            <i class="bi bi-pencil-square"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="6" class="text-center">Nenhum registro encontrado</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        if (ViewBag.TotalPaginas > 0)
+        {
+            <div class="mb-3">
+                <ul class="pagination justify-content-end">
+                    @if (ViewBag.Pagina > 1)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index", "Usuario", new { nome = ViewBag.Nome, email = ViewBag.Email, status = ViewBag.Status, perfil = ViewBag.Perfil, pagina = ViewBag.Pagina - 1 })">&laquo;</a>
+                        </li>
+                    }
+                    <li class="page-item page-link">Página @ViewBag.Pagina de @ViewBag.TotalPaginas</li>
+                    @if (ViewBag.Pagina < ViewBag.TotalPaginas)
+                    {
+                        <li class="page-item">
+                            <a class="page-link" href="@Url.Action("Index", "Usuario", new { nome = ViewBag.Nome, email = ViewBag.Email, status = ViewBag.Status, perfil = ViewBag.Perfil, pagina = ViewBag.Pagina + 1 })">&raquo;</a>
+                        </li>
+                    }
+                </ul>
+            </div>  
+        }
+
+
+    }
+</div>
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#cleanPage").click(function() {
+                window.location.href = "@Url.Action("Index", "Usuario")";
+            })
+        })
+    </script>
+}

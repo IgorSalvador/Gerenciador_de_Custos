@@ -1,4 +1,4 @@
-﻿﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 body {
     display: flex;
@@ -62,10 +62,10 @@ h1 {
     flex-direction: column;
 }
 
-    #sidebar.expand {
-        width: 240px;
-        min-width: 240px;
-    }
+#sidebar.expand {
+    width: 240px;
+    min-width: 240px;
+}
 
 .toggle-btn {
     background-color: transparent;
@@ -74,20 +74,20 @@ h1 {
     padding: 1rem 1.5rem;
 }
 
-    .toggle-btn i {
-        font-size: 1.5rem;
-        color: #FFF;
-    }
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
 
 .sidebar-logo {
     margin: auto 0;
 }
 
-    .sidebar-logo a {
-        color: #FFF;
-        font-size: 1.25rem;
-        font-weight: 600;
-    }
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
 
 #sidebar:not(.expand) .sidebar-logo,
 #sidebar:not(.expand) a.sidebar-link span {
@@ -192,18 +192,18 @@ a.sidebar-link:hover {
     z-index: 1;
 }
 
-    /* Links inside the dropdown */
-    .navbar-dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+/* Links inside the dropdown */
+.navbar-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-        /* Change color of dropdown links on hover */
-        .navbar-dropdown-content a:hover {
-            background-color: #ddd;
-        }
+/* Change color of dropdown links on hover */
+.navbar-dropdown-content a:hover {
+    background-color: #ddd;
+}
 
 /* Show the dropdown menu on hover */
 .navbar-dropdown:hover .navbar-dropdown-content {

@@ -6,10 +6,9 @@ using System.Web.Mvc;
 
 namespace CostManager.Controllers
 {
-    [Authorize]
-    public class HomeController : Controller
+    public class ErroController : Controller
     {
-        [HttpGet]
+        // GET: Erro
         public ActionResult Index()
         {
             return View();
