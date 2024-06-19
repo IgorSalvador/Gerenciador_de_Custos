@@ -1,0 +1,82 @@
+﻿@model CostManager.Models.ViewModel.UsuarioViewModel
+@{
+    ViewBag.Title = "Edição do Usuário";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="mb-3">
+    <div class="mb-5">
+        <h3 class="text-uppercase fw-bold">@ViewBag.Title</h3>
+    </div>
+
+    <div class="mb-3">
+        @using (Html.BeginForm("Edit", "Usuario", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    @Html.LabelFor(x => x.Nome, new { @class = "form-label" })
+                    @Html.EditorFor(x => x.Nome, new { htmlAttributes = new { @class = "form-control", @maxlength = "250" } })
+                    @Html.ValidationMessageFor(x => x.Nome, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-6">
+                    @Html.LabelFor(x => x.Email, new { @class = "form-label" })
+                    @Html.EditorFor(x => x.Email, new { htmlAttributes = new { @class = "form-control", @maxlength = "250" } })
+                    @Html.ValidationMessageFor(x => x.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    @Html.LabelFor(x => x.CPF, new { @class = "form-label" })
+                    @Html.EditorFor(x => x.CPF, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(x => x.CPF, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(x => x.DataNascimento, new { @class = "form-label" })
+                    <input type="date" name="DataNascimento" id="DataNascimento" class="form-control" value="@Model.DataNascimento.ToString("yyyy-MM-dd")" />
+                    @Html.ValidationMessageFor(x => x.DataNascimento, "", new { @class = "text-danger" })
+                </div>
+                <div class="col-md-4">
+                    @Html.LabelFor(x => x.Perfil, new { @class = "form-label" })
+                    <select class="form-select" name="Perfil" id="Perfil">
+                        <option disabled selected>Selecione um perfil</option>
+                        <option value="1" @(Model.Perfil == 1 ? "selected" : string.Empty)>Administrador</option>
+                        <option value="2" @(Model.Perfil == 2 ? "selected" : string.Empty)>Usuário Geral</option>
+                    </select>
+                    @Html.ValidationMessageFor(x => x.Perfil, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="form-check form-switch">
+                        @Html.CheckBoxFor(x => x.Status, new { @class = "form-check-input", @role = "switch" })
+                        @Html.LabelFor(x => x.Status, htmlAttributes: new { @class = "form-check-label" })
+                    </div>
+                    @Html.ValidationMessageFor(x => x.Status, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2">
+                <a href="@Url.Action("Index","Usuario")" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left"></i>
+                    Voltar
+                </a>
+                <button type="submit" class="btn btn-outline-success">
+                    <i class="bi bi-floppy"></i>
+                    Salvar
+                </button>
+            </div>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $("#CPF").mask("000.000.000-00", { reverse: true });
+        });
+    </script>
+}

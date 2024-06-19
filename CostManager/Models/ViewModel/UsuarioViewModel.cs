@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CostManager.Models.Database;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
@@ -40,6 +41,16 @@ namespace CostManager.Models.ViewModel
         public UsuarioViewModel()
         {
             
+        }
+
+        public UsuarioViewModel(Usuario usuario)
+        {
+            Nome = usuario.Nome;
+            Email = usuario.Email;
+            CPF = usuario.CPF;
+            DataNascimento = usuario.DataNascimento;
+            Perfil = usuario.Perfil;
+            Status = usuario.Status;
         }
     }
 }

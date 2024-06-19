@@ -7,15 +7,23 @@
       "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\views\\usuario\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|c:\\users\\igors\\documents\\projetos\\costmanager\\costmanager\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|c:\\users\\igors\\documents\\projetos\\costmanager\\costmanager\\views\\usuario\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\views\\usuario\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|C:\\Users\\igors\\Documents\\Projetos\\CostManager\\costmanager\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|C:\\Users\\igors\\Documents\\Projetos\\CostManager\\costmanager\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|c:\\users\\igors\\documents\\projetos\\costmanager\\costmanager\\views\\usuario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\views\\usuario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|c:\\users\\igors\\documents\\projetos\\costmanager\\costmanager\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|c:\\users\\igors\\documents\\projetos\\costmanager\\costmanager\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|C:\\Users\\igors\\Documents\\Projetos\\CostManager\\costmanager\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3C5BBCFE-B892-4AE8-9DBE-BB342AD0E9CB}|CostManager\\CostManager.csproj|solutionrelative:costmanager\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -36,46 +44,72 @@
               "RelativeDocumentMoniker": "CostManager\\Views\\Usuario\\Index.cshtml",
               "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Usuario\\Index.cshtml",
               "RelativeToolTip": "CostManager\\Views\\Usuario\\Index.cshtml",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAQwCkAAAAvAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-18T02:52:15.128Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "CostManager\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "CostManager\\Controllers\\LoginController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAIA0wCEAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T23:10:22.96Z",
+              "WhenOpened": "2024-06-19T02:24:56.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Usuario\\Create.cshtml",
+              "RelativeDocumentMoniker": "CostManager\\Views\\Usuario\\Create.cshtml",
+              "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Usuario\\Create.cshtml",
+              "RelativeToolTip": "CostManager\\Views\\Usuario\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T02:24:56.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Usuario\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CostManager\\Views\\Usuario\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Usuario\\Edit.cshtml",
+              "RelativeToolTip": "CostManager\\Views\\Usuario\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-19T02:23:18.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "CostManager\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "CostManager\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-19T02:00:58.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CostManager\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CostManager\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAACEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-18T02:40:19.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "CostManager\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\igors\\Documents\\Projetos\\CostManager\\CostManager\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "CostManager\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAA9wCsAAAAgAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAMBAwG8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-18T02:35:44.963Z",
               "EditorCaption": ""

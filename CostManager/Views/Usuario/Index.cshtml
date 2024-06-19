@@ -3,17 +3,28 @@
 @{
     ViewBag.Title = "Listagem de Usuários";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    string message = TempData["Message"] as string ?? string.Empty;
 }
 
 <div class="mb-3">
     <div class="mb-4">
-        <h3>@ViewBag.Title</h3>
+        <h3 class="text-uppercase fw-bold">@ViewBag.Title</h3>
     </div>
 
-    <div class="mb-3">
+    @if (!string.IsNullOrEmpty(message))
+    {
+        <div class="mb-4">
+            <div class="alert alert-@(message.ToUpper().Contains("SUCESSO") ? "success" : "danger") alert-dismissible fade show" role="alert">
+                @message
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    }
+
+    <div class="mb-4">
         @using (Html.BeginForm("Index", "Usuario", FormMethod.Get, new { enctype = "multipart/form-data" }))
         {
-            <div class="row mb-3">
+            <div class="row mb-4">
                 <div class="col-md-3">
                     <label for="nome" class="form-label">Nome</label>
                     <input type="text" class="form-control" id="nome" name="nome" value="@ViewBag.Nome" autocomplete="off">
@@ -41,10 +52,10 @@
             </div>
             <div class="d-flex justify-content-between">
                 <div>
-                    <button type="button" id="adicionarUsuario" class="btn btn-outline-success">
+                    <a href="@Url.Action("Create","Usuario")" class="btn btn-outline-success">
                         <i class="bi bi-plus-lg"></i>
                         Adicionar
-                    </button>
+                    </a>
                 </div>
                 <div class="d-flex justify-content-end gap-2">
                     <button type="button" id="cleanPage" class="btn btn-outline-danger">
@@ -132,7 +143,7 @@
                         </li>
                     }
                 </ul>
-            </div>  
+            </div>
         }
 
 
